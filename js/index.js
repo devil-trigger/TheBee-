@@ -6,7 +6,10 @@ $(function(){
 		console.log(data*100)
 		$('.thebee-bar').css("width",data*100+"%")
 	})
-	
+	let windowHeight=$(window).height()
+	console.log($('.position-sticky').height())
+	let positionStickHei=$('.position-sticky').height()
+	$('.swiper-container').css('height',windowHeight-positionStickHei+"px")
 	$(function() {
 	    var myDate = new Date;
 	    var year = myDate.getFullYear(); //获取当前年
