@@ -23,7 +23,14 @@ $(function(){
 	    // console.log(year, mon, date, weeks[week])
 	    $("#time").html(year + "年" + "&nbsp;" + mon + "月" + "&nbsp;" + date + "日" + "&nbsp;&nbsp;&nbsp;" +weeks[week]);
 	})
-	
+	// console.log($('.bottom-down>span'))
+	$('.bottom-down>span').click(function(){
+		$('html,body').animate({
+			"scrollTop":windowHeight,
+			
+		},700)
+		
+	})
 	
 })
 

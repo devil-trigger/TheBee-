@@ -25,102 +25,108 @@
 		<!-- lunbo tu  liangjiantao----------- -->
 		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 		<script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
-		
 		<!-- animate---------------------- -->
-		<link href="https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.0/animate.min.css" rel="stylesheet">	</head>
-
 	<body>
 		<!-- -------------------导航栏↓↓↓↓↓- ------------- -->
-		<div class="position-sticky sticky-top">
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-				<a class="navbar-brand" href="#">
-					<img src="./images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-					TheBee天气
-				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-				 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">6日天气</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">空气质量</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">天气生活</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-							 aria-haspopup="true" aria-expanded="false">
-								了解更多
-							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#">了解更多</a>
-								<a class="dropdown-item" href="#">hello world</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="https://thebee.fun">访问博客</a>
-							</div>
-						</li>
-					</ul>
-					<form class="form-inline my-2 my-lg-2">
-						<input class="form-control mr-sm-4" type="search" placeholder="搜索城市天气" aria-label="Search">
-						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">城市搜索</button>
-					</form>
+			<div class="position-sticky sticky-top">
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+					<a class="navbar-brand" href="#">
+						<img src="./images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+						TheBee天气
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+			
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">6日天气</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">空气质量</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">天气生活</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									了解更多
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">了解更多</a>
+									<a class="dropdown-item" href="#">hello world</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="https://thebee.fun">访问博客</a>
+								</div>
+							</li>
+						</ul>
+						<form class="form-inline my-2 my-lg-2">
+							<input class="form-control mr-sm-4" type="search" placeholder="搜索城市天气" aria-label="Search">
+							<button class="btn btn-outline-success my-2 my-sm-0" type="submit">城市搜索</button>
+						</form>
+					</div>
+				</nav>
+				<!-- ------------------------------------- -->
+				<div class="progress" style="height: 10px;">
+					<div class="progress-bar progress-bar-striped bg-info thebee-bar" role="progressbar" style="width: 1%"
+					 aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 				</div>
-			</nav>
-			<!-- ------------------------------------- -->
-			<div class="progress" style="height: 10px;">
-				<div class="progress-bar progress-bar-striped bg-info thebee-bar" role="progressbar" style="width: 1%"
-				 aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 			</div>
-		</div>
-		<!-- -------------------头部↑↑↑↑↑ 网页进度条-------------- -->
-		<!-- --------------------  展示模块  -------------------- -->
-		<div class="banner" style="width: 100%;margin: auto;">
-			<div class="swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<img src="images/banner1.jpg" class="img-fluid" alt="Responsive image" style="width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index: 1;">
-						<div class="jumbotron Jubotron-top">
-							<div class="clearfix">
-								<div class="" style="text-align: left;">
-									<span class="display-4">广州</span>
+			<!-- -------------------头部↑↑↑↑↑ 网页进度条-------------- -->
+		<div class="sliders">  
+			<!-- --------------------  展示模块  -------------------- -->
+			<div class="banner" style="width: 100%;margin: auto;">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="images/banner1.jpg" class="img-fluid" alt="Responsive image" style="width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index: 1;">
+							<div class="jumbotron Jubotron-top">
+								<div class="clearfix">
+									<div class="" style="text-align: left;">
+										<span class="display-4">广州</span>
+									</div>
+									<div class="" style="position: relative;top: -1.7rem;">
+										<span class="display-1">24</span><b class="display-1">°</b>
+										<p class="lead">湿度：80%</p>
+										<span>风向：北风 1级</span>&ensp;&ensp;<span>紫外线：中等</span>
+									</div>
 								</div>
-								<div class="" style="position: relative;top: -1.7rem;">
-									<span class="display-1">24</span><b class="display-1">°</b>
-									<p class="lead">湿度：80%</p>
-									<span>风向：北风 1级</span>&ensp;&ensp;<span>紫外线：中等</span>
-								</div>
+								<hr class="my-4">
+								<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+								<figcaption class="figure-caption">胜日寻芳泗水滨，无边光景一时新。 ——《春日》朱熹</figcaption>
 							</div>
-							<hr class="my-4">
-							<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-							<figcaption class="figure-caption">胜日寻芳泗水滨，无边光景一时新。 ——《春日》朱熹</figcaption>
+							<div class="bottom-down">
+								<span>
+									<svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-down-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									  <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+									  <path fill-rule="evenodd" d="M4.646 7.646a.5.5 0 0 1 .708 0L8 10.293l2.646-2.647a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 0-.708z"/>
+									  <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5z"/>
+									</svg>
+								</span>
+							</div>
 						</div>
-						<div class="bottom-down animated bounce">
-								<svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-down-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-								  <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-								  <path fill-rule="evenodd" d="M4.646 7.646a.5.5 0 0 1 .708 0L8 10.293l2.646-2.647a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 0-.708z"/>
-								  <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5z"/>
-								</svg>
+						<div class="swiper-slide"><img src="images/bee2.webp" class="img-fluid" alt="Responsive image"></div>
+						<div class="swiper-slide"><img src="images/bee3.webp" class="img-fluid" alt="Responsive image"></div>
+						<div class="swiper-slide"><img src="images/bee4.webp" class="img-fluid" alt="Responsive image"></div>
+						<div class="swiper-slide"><img src="images/bee1.webp" class="img-fluid" alt="Responsive image"></div>
+						<div class="swiper-slide"><img src="images/bee5.webp" class="img-fluid" alt="Responsive image"></div>
+						<div class="swiper-slide">
+							<img src="images/bee7.jpg" class="img-fluid" alt="Responsive image" style="height: 100%;height:100%; relative;left: 0;top: 0;z-index: 3;">
 						</div>
 					</div>
-					<div class="swiper-slide"><img src="images/bee2.webp" class="img-fluid" alt="Responsive image"></div>
-					<div class="swiper-slide"><img src="images/bee3.webp" class="img-fluid" alt="Responsive image"></div>
-					<div class="swiper-slide"><img src="images/bee4.webp" class="img-fluid" alt="Responsive image"></div>
-					<div class="swiper-slide"><img src="images/bee1.webp" class="img-fluid" alt="Responsive image"></div>
-					<div class="swiper-slide"><img src="images/bee5.webp" class="img-fluid" alt="Responsive image"></div>
-					<div class="swiper-slide"><a href="http://thebee.fun"><img src="images/bee7.jpg" class="img-fluid" alt="Responsive image" style="width: 100%;height: 100%"></a></div>
 				</div>
 			</div>
 		</div>
-
+		<!-- ----------------------------------- 下面是 其他信息 --------------------------------------- -->
+		<!-- ----------------------------------- 下面是 其他信息 --------------------------------------- -->
+		<!-- ----------------------------------- 下面是 其他信息 --------------------------------------- -->
+		
 
 
 	</body>
@@ -136,6 +142,6 @@
 	</body>
 
 	<!-- ----------------引入 jq 库 编程------------------- -->
-	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 </html>

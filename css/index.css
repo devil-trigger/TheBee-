@@ -43,16 +43,26 @@ body {
 	align-items: center;
 }
 
-.Jubotron-top{
+.Jubotron-top {
 	position: absolute;
 	z-index: 5;
 	background-color: transparent;
 }
-.bottom-down{
+
+.bottom-down {
 	position: absolute;
 	left: 0;
-	bottom:1rem;
+	bottom: 1rem;
 	height: 2rem;
 	width: 100%;
 	z-index: 5;
+}
+
+.bottom-down>span {
+	cursor: pointer;
+}
+.sliders{
+/* 	position: relative;
+	top: 0;
+	left: 0; */
 }
